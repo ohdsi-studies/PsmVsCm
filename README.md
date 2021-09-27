@@ -28,6 +28,7 @@ How to run
 
 ```r
 if (!require('gurobi')){install.packages("/gurobi_9.0-1.zip", repos = NULL)} # Update gurobi version and file path as necesssary
+
 ```
 
 3. In R, use the following code to install the study package and its dependencies:
