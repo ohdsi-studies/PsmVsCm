@@ -22,6 +22,8 @@ The current study compares the performance of PSM vs. CM (non-large scale) in te
 How to run
 ==========
 
+Download all of the scripts necessary to run the study [here](). The code required to conduct the study is contained in the file named generateData.R.
+
 1. Make sure that you have Java installed. If you don't have Java already installed on your computed (on most computers it already is installed), go to java.com to get the latest version. (If you have trouble building with rJava below, be sure on Windows that your Path variable includes the path to jvm.dll (Windows Button --> type "path" --> Edit Environmental Variables --> Edit PATH variable, add to end ;C:/Program Files/Java/jre/bin/server) or wherever it is on your system).
 
 2. The study will require a Gurobi license. Make sure Gurobi is installed on you local machine to perform cardinality matching. In R, use the following code to install Gurobi from your local machine:
@@ -31,7 +33,7 @@ if (!require('gurobi')){install.packages("/gurobi_9.0-1.zip", repos = NULL)} # U
 
 ```
 
-3. In R, use the following code to install the study package and its dependencies:
+3. In R, use the following code to install the study package's dependencies:
 
 ```r
 install.packages("devtools")
@@ -50,7 +52,7 @@ pacman::p_load(devtools, drat, CohortMethod, SqlRender, DatabaseConnector, grid,
                CohortDiagnostics)
 ```
       
-4. Once installed, you can execute the study by modifying and using the following code:
+4. Once installed, you can define parameters using the following code:
 
 Line 37
 
@@ -109,8 +111,10 @@ ncs <- c(434165,436409,199192,4088290,4092879,44783954,75911,137951,77965,
 
 - For details on how to configurecreateConnectionDetails in your environment type this for help:
  ?createConnectionDetails
-- cdmDatabaseSchema should specify the schema name where your patient-level data in OMOP CDM format resides. Note that for SQL Server, this should include both the database and schema name, for example 'cdm_data.dbo'.
+- cdmDatabaseSchema should specify the schema name where your patient-level data in OMOP CDM format resides. Note that for Redshift, this should include the database name, for example 'cdm_data'.
 - oracleTempSchema should be used in Oracle to specify a schema where the user has write privileges for storing temporary tables.
 - cmDataFolder (created in the next step) specifies the location where data on the study population is stored
+- splitRatio specifies the percent of the study population to place in each subsample draw of each sample group
+- num_cohorts the number of subsample draws for the given sample group
 
 5. Download all of the scripts from the 'R and SQL' folder of this repository (found [here]( https://github.com/ohdsi-studies/EvaluatingCardinalityMatching/tree/master/R%20and%20SQL)) to your working directory.
