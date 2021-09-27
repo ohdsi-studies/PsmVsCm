@@ -56,12 +56,12 @@ Line 37
 
 '''r
 connectionDetails <- createConnectionDetails(
-  dbms = ,
-  server = ,
-  extraSettings = ,
-  port = ,
-  user = ,
-  password = 123
+  dbms = "",
+  server = "",
+  extraSettings = "",
+  port = 123,
+  user = "",
+  password = ""
 )
 '''
 
