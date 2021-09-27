@@ -61,7 +61,7 @@ connectionDetails <- createConnectionDetails(
   extraSettings = ,
   port = ,
   user = ,
-  password = 
+  password = 123
 )
 '''
 
