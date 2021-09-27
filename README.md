@@ -54,7 +54,7 @@ pacman::p_load(devtools, drat, CohortMethod, SqlRender, DatabaseConnector, grid,
 
 Line 37
 
-'''r
+```r
 connectionDetails <- createConnectionDetails(
   dbms = "",
   server = "",
@@ -63,7 +63,7 @@ connectionDetails <- createConnectionDetails(
   user = "",
   password = ""
 )
-'''
+```
 
 Line 54
 
