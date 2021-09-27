@@ -7,12 +7,17 @@
 - Study type: **Methods**
 - Tags: **-**
 - Study lead: **Stephen Fortin**
-- Study lead forums tag: **[[Lead tag]](https://forums.ohdsi.org/u/[Lead tag])**
+- Study lead forums tag: **[stephenfortin](https://forums.ohdsi.org/u/stephenfortin/)**
 - Study start date: **-**
 - Study end date: **-**
 - Protocol: **-**
 - Publications: **-**
 - Results explorer: **-**
+
+Description
+==========
+
+The current study compares the performance of PSM vs. CM (non-large scale) in terms of post-match sample retention, matching and observed covariate balance, and residual confounding. Residual confounding is measured based on the expected absolute sysematic error (EASE) of negative control outcome experiments. 
 
 [Description (single paragraph)]
 
