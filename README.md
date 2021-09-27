@@ -22,7 +22,7 @@ The current study compares the performance of PSM vs. CM (non-large scale) in te
 How to run
 ==========
 
-Download all of the scripts necessary to run the study [here](). The code required to conduct the study is contained in the file named generateData.R.
+Download all of the scripts necessary to run the study [here](https://github.com/ohdsi-studies/PsmVsCm/tree/master/Code). The code required to conduct the study is contained in the file named generateData.R.
 
 1. Make sure that you have Java installed. If you don't have Java already installed on your computed (on most computers it already is installed), go to java.com to get the latest version. (If you have trouble building with rJava below, be sure on Windows that your Path variable includes the path to jvm.dll (Windows Button --> type "path" --> Edit Environmental Variables --> Edit PATH variable, add to end ;C:/Program Files/Java/jre/bin/server) or wherever it is on your system).
 
@@ -117,4 +117,4 @@ ncs <- c(434165,436409,199192,4088290,4092879,44783954,75911,137951,77965,
 - splitRatio specifies the percent of the study population to place in each subsample draw of each sample group
 - num_cohorts the number of subsample draws for the given sample group
 
-5. Download all of the scripts from the 'R and SQL' folder of this repository (found [here]( https://github.com/ohdsi-studies/EvaluatingCardinalityMatching/tree/master/R%20and%20SQL)) to your working directory.
+5. To execute the study, run all code subsequent to line 101. 
